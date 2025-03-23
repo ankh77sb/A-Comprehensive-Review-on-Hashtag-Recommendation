@@ -3,6 +3,9 @@ The exponential growth of user-generated content on social media platforms has p
 
 Below are summaries of few popular research papers on Hashtag Recommendation:
 ## Hashtag recommendation for photo sharing services
+
+Zhang, S., Yao, Y., Xu, F., Tong, H., Yan, X., & Lu, J. (2019). Hashtag Recommendation for Photo Sharing Services. Proceedings of the AAAI Conference on Artificial Intelligence, 33(01), 5805-5812. https://doi.org/10.1609/aaai.v33i01.33015805
+
 Hashtag Recommendation for Photo Sharing Services, published in the Thirty-Third AAAI Conference on Artificial Intelligence (AAAI-19), proposes MACON model for recommending hashtags for photo sharing services such as Pinterest and Instagram based on two requirements:
 1. Content Modeling Module - Hybrid modelling of the Image and Text in the post
 2. User Habit Modeling Module - The modeling of users’ tagging habits based on historical posts of the user aligning to the current post.
