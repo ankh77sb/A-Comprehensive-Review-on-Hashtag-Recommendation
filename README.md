@@ -58,6 +58,22 @@ BELHASH primarliy consists of 5 components:
 
 Although, it uses a rather simple architecture combining BERT and LSTMS, it effectively recommends hashtags on low-resource dataset (unique hashtag set of 1350 post data processing to remove noisy data) with 0.72 accuracy, 0.7 Precision, 0.66 Recall and 0.67 F1-Score.
 
+## Hashtag Recommendation for Multimodal Microblog Using Co-Attention Network
+
+Wang, Jiawen & Huang, Haoran & Huang, Xuanjing & Gong, Yeyun. (2017). Hashtag Recommendation for Multimodal Microblog Using Co-Attention Network. 3420-3426. 10.24963/ijcai.2017/478. 
+
+Hashtag Recommendation for Multimodal Microblog Using Co-Attention Network, published in The Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence (IJCAI-17), proposes a co-attention network incorporating visual and textual data from tweets for hashtag recommendation by formulating it as a multi-class classification problem. The model primarly consists of three components - Feature extractor, Co-attention network and Predictor.
+
+For image feature extraction, the proposed model utilizes a pretrained VGGNet to extract information from the image after dividing it into multiple N x N grids. For textual feature extraction, word embedding is obtained and then fed into an LSTM module. Both the feature matrices are then passed through a co-attention network which sequentially generates tweet and image attention.
+
+**Tweet-guided visual attention** is employed as the hashtags in images can be related to only localised regions and we need to filter out noises based on textual data. The textual features are pooled and fed into an image attention layer. Based on the probability obtained, new image vector representation is obtained by the weighted sum of indivual image vectors. **Image-guided textual attention** is employed similarly. In order to obtain the textual probability distribution, the model uses the newly obtained image representation to query the original textual feature matrix. The above co-attention layer can be stacked to query complex microblogs iteratively. 
+
+The predictor composes of a single softmax classifier which is fed with the aggregated feature vector of image and text matrix representations. A ranked list of hashtags is obtained as an output.
+
+
+
+
+
 
 
 
