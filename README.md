@@ -31,6 +31,24 @@ For community detection, the study uses Louvian algorithm, which optimizes corre
 
 For new users, correlation between tweets of the user and knowledge graphs and bases in the large socal network are computed. The relevant communities are identified based on both shared and individual graphs. The best model is used to recommend the hashtags for new tweets.
 
+## AMNN: Attention-Based Multimodal Neural Network Model for Hashtag Recommendation
+
+Q. Yang et al., "AMNN: Attention-Based Multimodal Neural Network Model for Hashtag Recommendation," in IEEE Transactions on Computational Social Systems, vol. 7, no. 3, pp. 768-779, June 2020, doi: 10.1109/TCSS.2020.2986778.
+
+AMNN: Attention-Based Multimodal Neural Network Model for Hashtag Recommendation, published in IEEE Transactions on Computational Social Systems, proposes a hashtag recommendation network by framing the task as a sequence generation problem using sequential input data. The study is conducted on two publicly available Instagram-based datasets—HARRISON and NUS-WIDE—as well as a collection of crawled microblogs called MM-INS. The sequence-to-sequence model employs a multimodal feature extraction encoder and a coupled decoder for hashtag recommendation.
+
+Image Feature Extraction is carried out using a hybrid neural network architecture that incorporates convolutional neural networks (CNNs)—specifically, ResNet-50 and Inception V3—followed by a Long Short-Term Memory (LSTM) module. The LSTM output forms a time-ordered sequence, which is then passed through an attention module to capture relevant and noise-free spatial features.
+
+Text Feature Extraction is performed using a Bi-directional LSTM (BiLSTM) model, which captures contextual information from both forward and backward directions of the input sequence. The hidden states from both directions are concatenated and fed into an attention layer. Features from the image and text modules are then fused to obtain a combined multimodal representation, which is input into a Gated Recurrent Unit (GRU)-based decoder.
+
+During training, the hashtags are encoded and input into the GRU, which learns the correlation between hashtags and multimodal content. During inference, since ground-truth hashtags are unavailable, the model removes the dependency on previous outputs. The GRU outputs a ranked list of hashtags, from which those with the highest probabilities are recommended.
+
+
+
+
+
+
+
 
 
 
