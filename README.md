@@ -43,6 +43,20 @@ Text Feature Extraction is performed using a Bi-directional LSTM (BiLSTM) model,
 
 During training, the hashtags are encoded and input into the GRU, which learns the correlation between hashtags and multimodal content. During inference, since ground-truth hashtags are unavailable, the model removes the dependency on previous outputs. The GRU outputs a ranked list of hashtags, from which those with the highest probabilities are recommended.
 
+## NLP-enabled Recommendation of Hashtags for Covid Based Tweets Using Hybrid BERT-LSTM Model
+
+Jain, Kirti & Jindal, Rajni. (2024). NLP-enabled Recommendation of Hashtags for Covid based Tweets using Hybrid BERT-LSTM Model. ACM Transactions on Asian and Low-Resource Language Information Processing. 10.1145/3640812. 
+
+**NLP-enabled Recommendation of Hashtags for Covid Based Tweets Using Hybrid BERT-LSTM Model** published in ACM Transactions on Asian and Low-Resource Language Information Processing, aims to automate hashtagging by using BELHASH, a BERT Embedding based LSTM for Hashtag Recommendation by considering it as a multilabel clasification task using MultiLabelBinarizer. The study was perform on Low-Resource language data consisting of COVID-19 Tweets.
+
+BELHASH primarliy consists of 5 components:
+1. Hashtag Encoder - One hot encoding is performed on hashtags
+2. Word Tokenizer using BERT
+3. Feature extarction using LSTM
+4. Parts-of-Speech tagger
+5. Hashtag recommender - Top-K Ranked list based on cosine similarity of all tags and new tweet feature vector.
+
+Although, it uses a rather simple architecture combining BERT and LSTMS, it effectively recommends hashtags on low-resource dataset (unique hashtag set of 1350 post data processing to remove noisy data) with 0.72 accuracy, 0.7 Precision, 0.66 Recall and 0.67 F1-Score.
 
 
 
