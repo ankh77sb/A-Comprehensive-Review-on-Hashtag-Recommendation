@@ -2,8 +2,8 @@
 The exponential growth of user-generated content on social media platforms has precipitated significant challenges in information management, particularly in content organization, retrieval, and discovery. Hashtags, as a fundamental categorization mechanism, play a pivotal role in enhancing content visibility and user engagement. However, the development of accurate and robust hashtag recommendation systems remains a complex and evolving research challenge. Existing surveys in this domain are limited in scope and recency, focusing narrowly on specific platforms (X and Sina Weibo), methodologies, or timeframes. To address this gap, this review article conducts a systematic analysis of hashtag recommendation systems, comprehensively examining recent advancements across several dimensions. Serving as a foundational resource for researchers and practitioners, this work aims to catalyze innovation in social media content organization, thereby advancing user experience and driving innovation in social media content management and discovery.
 
 Below are summaries of few popular research papers on Hashtag Recommendation:
-## Hashtag recommendation for photo sharing services
 
+## Hashtag recommendation for photo sharing services
 Zhang, S., Yao, Y., Xu, F., Tong, H., Yan, X., & Lu, J. (2019). Hashtag Recommendation for Photo Sharing Services. Proceedings of the AAAI Conference on Artificial Intelligence, 33(01), 5805-5812. https://doi.org/10.1609/aaai.v33i01.33015805
 
 Hashtag Recommendation for Photo Sharing Services, published in the Thirty-Third AAAI Conference on Artificial Intelligence (AAAI-19), proposes MACON model for recommending hashtags for photo sharing services such as Pinterest and Instagram based on two requirements:
@@ -19,7 +19,6 @@ This module consists of two major steps. The first step samples a small number o
 The output of the content modelling module (post feature vector denoted as p) and user habit modeling module (influence vector denoted as t) are concatenated to make the recommendations.
 
 ## Toward a Cognitive-Inspired Hashtag Recommendation for Twitter Data Analysis
-
 Djenouri, Youcef & Belhadi, Asma & Srivastava, Gautam & Lin, Jerry. (2022). Toward a Cognitive-Inspired Hashtag Recommendation for Twitter Data Analysis. IEEE Transactions on Computational Social Systems. PP. 1-10. 10.1109/TCSS.2022.3169838. 
 
 Toward a Cognitive-Inspired Hashtag Recommendation for Twitter Data Analysis, published in IEEE Transactions on Computational Social Systems, investigates a knowledge-graph and deep learning based cognitive approach for hashtag recommendation. The study first performs user community detection, and then constructs knowledge graph to infer semantic relationships in the respective twitter user communities. Each community is trained with embedded deep learning model and the best model is chosen.
@@ -32,7 +31,6 @@ For community detection, the study uses Louvian algorithm, which optimizes corre
 For new users, correlation between tweets of the user and knowledge graphs and bases in the large socal network are computed. The relevant communities are identified based on both shared and individual graphs. The best model is used to recommend the hashtags for new tweets.
 
 ## AMNN: Attention-Based Multimodal Neural Network Model for Hashtag Recommendation
-
 Q. Yang et al., "AMNN: Attention-Based Multimodal Neural Network Model for Hashtag Recommendation," in IEEE Transactions on Computational Social Systems, vol. 7, no. 3, pp. 768-779, June 2020, doi: 10.1109/TCSS.2020.2986778.
 
 AMNN: Attention-Based Multimodal Neural Network Model for Hashtag Recommendation, published in IEEE Transactions on Computational Social Systems, proposes a hashtag recommendation network by framing the task as a sequence generation problem using sequential input data. The study is conducted on two publicly available Instagram-based datasets—HARRISON and NUS-WIDE—as well as a collection of crawled microblogs called MM-INS. The sequence-to-sequence model employs a multimodal feature extraction encoder and a coupled decoder for hashtag recommendation.
@@ -44,7 +42,6 @@ Text Feature Extraction is performed using a Bi-directional LSTM (BiLSTM) model,
 During training, the hashtags are encoded and input into the GRU, which learns the correlation between hashtags and multimodal content. During inference, since ground-truth hashtags are unavailable, the model removes the dependency on previous outputs. The GRU outputs a ranked list of hashtags, from which those with the highest probabilities are recommended.
 
 ## NLP-enabled Recommendation of Hashtags for Covid Based Tweets Using Hybrid BERT-LSTM Model
-
 Jain, Kirti & Jindal, Rajni. (2024). NLP-enabled Recommendation of Hashtags for Covid based Tweets using Hybrid BERT-LSTM Model. ACM Transactions on Asian and Low-Resource Language Information Processing. 10.1145/3640812. 
 
 **NLP-enabled Recommendation of Hashtags for Covid Based Tweets Using Hybrid BERT-LSTM Model** published in ACM Transactions on Asian and Low-Resource Language Information Processing, aims to automate hashtagging by using BELHASH, a BERT Embedding based LSTM for Hashtag Recommendation by considering it as a multilabel clasification task using MultiLabelBinarizer. The study was perform on Low-Resource language data consisting of COVID-19 Tweets.
@@ -59,7 +56,6 @@ BELHASH primarliy consists of 5 components:
 Although, it uses a rather simple architecture combining BERT and LSTMS, it effectively recommends hashtags on low-resource dataset (unique hashtag set of 1350 post data processing to remove noisy data) with 0.72 accuracy, 0.7 Precision, 0.66 Recall and 0.67 F1-Score.
 
 ## Hashtag Recommendation for Multimodal Microblog Using Co-Attention Network
-
 Wang, Jiawen & Huang, Haoran & Huang, Xuanjing & Gong, Yeyun. (2017). Hashtag Recommendation for Multimodal Microblog Using Co-Attention Network. 3420-3426. 10.24963/ijcai.2017/478. 
 
 Hashtag Recommendation for Multimodal Microblog Using Co-Attention Network, published in The Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence (IJCAI-17), proposes a co-attention network incorporating visual and textual data from tweets for hashtag recommendation by formulating it as a multi-class classification problem. The model primarly consists of three components - Feature extractor, Co-attention network and Predictor.
@@ -71,7 +67,6 @@ For image feature extraction, the proposed model utilizes a pretrained VGGNet to
 The predictor composes of a single softmax classifier which is fed with the aggregated feature vector of image and text matrix representations. A ranked list of hashtags is obtained as an output.
 
 ## Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network
-
 Li, Mengmeng, Gan, Tian, Liu, Meng, Cheng, Zhiyong, Yin, Jianhua, & Nie, Liqiang. (2019). Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network. In Proceedings of the 27th ACM International Conference on Multimedia (MM '19), pp. 509–518. https://doi.org/10.1145/3357384.3357912
 
 This paper addresses three key challenges in hashtag recommendation for micro-videos:
@@ -95,6 +90,9 @@ The final interactive embedding model is trained end-to-end and consists of:
 1. A Bi-interaction layer
 2. Fully connected hidden layers
 3.  A final prediction layer
+
+
+
 
 
 
