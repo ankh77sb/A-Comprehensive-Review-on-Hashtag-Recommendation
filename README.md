@@ -70,6 +70,35 @@ For image feature extraction, the proposed model utilizes a pretrained VGGNet to
 
 The predictor composes of a single softmax classifier which is fed with the aggregated feature vector of image and text matrix representations. A ranked list of hashtags is obtained as an output.
 
+## Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network
+
+Li, Mengmeng, Gan, Tian, Liu, Meng, Cheng, Zhiyong, Yin, Jianhua, & Nie, Liqiang. (2019). Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network. In Proceedings of the 27th ACM International Conference on Multimedia (MM '19), pp. 509–518. https://doi.org/10.1145/3357384.3357912
+
+This paper addresses three key challenges in hashtag recommendation for micro-videos:
+1. The absence of a benchmark dataset, which the authors address by constructing and releasing a dataset containing micro-videos, associated hashtags, and user information.
+2. The lack of comprehensive study on the temporal and multimodal characteristics of micro-videos.
+3. The issue of hashtag sparsity and long-tail distribution, which limits the effectiveness of traditional recommendation approaches.
+
+To tackle these issues, the authors propose a novel multi-view representation interactive embedding model combined with graph-based information propagation. They introduce a benchmark dataset called INSVIDEO, made publicly available for research.
+
+Given the long-tail distribution of hashtags in micro-videos, the model avoids bias by constructing a knowledge graph based on hashtag correlations. Hashtag embedding propagation is implemented through stacked Graph Convolutional Network (GCN) layers. The correlation matrix used in GCN propagation is built using four types of relationships:
+1. Composition (cp)
+2. Super-subordination (ss)
+3. Positive correlation (po)
+4. Co-occurrence (co)
+
+When multiple relations exist, the one with the highest priority (in the above order) is selected.
+
+The multi-view representation learning component uses parallel LSTM networks followed by a Common Space Learning strategy to process multimodal inputs. User behavior modeling leverages pretrained CNNs (for visual features) and pretrained Word2Vec models (for textual features). These features are fused and passed through a fully connected network.
+
+The final interactive embedding model is trained end-to-end and consists of:
+1. A Bi-interaction layer
+2. Fully connected hidden layers
+3.  A final prediction layer
+
+
+
+
 
 
 
