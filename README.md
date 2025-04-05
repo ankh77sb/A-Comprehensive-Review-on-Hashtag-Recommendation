@@ -18,6 +18,20 @@ This module consists of two major steps. The first step samples a small number o
 
 The output of the content modelling module (post feature vector denoted as p) and user habit modeling module (influence vector denoted as t) are concatenated to make the recommendations.
 
+## Toward a Cognitive-Inspired Hashtag Recommendation for Twitter Data Analysis
+
+Djenouri, Youcef & Belhadi, Asma & Srivastava, Gautam & Lin, Jerry. (2022). Toward a Cognitive-Inspired Hashtag Recommendation for Twitter Data Analysis. IEEE Transactions on Computational Social Systems. PP. 1-10. 10.1109/TCSS.2022.3169838. 
+
+Toward a Cognitive-Inspired Hashtag Recommendation for Twitter Data Analysis, published in IEEE Transactions on Computational Social Systems, investigates a knowledge-graph and deep learning based cognitive approach for hashtag recommendation. The study first performs user community detection, and then constructs knowledge graph to infer semantic relationships in the respective twitter user communities. Each community is trained with embedded deep learning model and the best model is chosen.
+
+**Commuity detection with Knowlege graph and Deep learning for Hashtag Recommendation (CKD-HR)**
+Divide and Conquer model is used to obtain subsolutions on individual knowledge graphs which when combined with each other results in a sets of shared knowledge bases (global solution). The knowldge graph represents the semantic correlations among the hashtags in the given community. The shared knowledge base combines communities if they contain similar hashtags. 
+
+For community detection, the study uses Louvian algorithm, which optimizes correlation among user communities, to create condensed and densely-connected graphs by using hirearchial clustering model. It merges neighbouring communities to create a strongly correlated subgraphs. Then deep learning models, based on entity embedding (here bag of words), is applied. As hashtag recommendation is studied for individual communities, different models are formed out of which the best-performing model is selected.
+
+For new users, correlation between tweets of the user and knowledge graphs and bases in the large socal network are computed. The relevant communities are identified based on both shared and individual graphs. The best model is used to recommend the hashtags for new tweets.
+
+
 
 
 
